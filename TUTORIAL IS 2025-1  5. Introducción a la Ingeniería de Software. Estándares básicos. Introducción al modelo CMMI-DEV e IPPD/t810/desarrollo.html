@@ -16,686 +16,181 @@
 <body style="">
 	<br><br><br>
 	<h1><t>3. DESARROLLO</t></h1> <br>
-	<h3>3.1 ¿Qué es el CMMI?</h3>
+	<h3>3.1 Álgebra de Boole</h3>
 	<h5>
-		CMMI (Capability Maturity Model Integration) es un modelo de referencia utilizado para la
-		mejora de procesos en organizaciones que desarrollan productos y servicios, especialmente
-		en el ámbito del desarrollo de software. Desarrollado por el Instituto de Ingeniería de Software
-		(SEI) de la Universidad de Carnegie Mellon, CMMI se diseñó para integrar y mejorar diferentes
-		modelos de madurez y prácticas de gestión en un solo marco coherente.
+		En 1938, Claude Shannon demostró cómo se podían utilizar las reglas de la lógica para diseñar circuitos. Estas reglas, enunciadas por primera vez en 1854 por George Boole en su libro *Las leyes del pensamiento*, son el fundamento del Álgebra de Boole. El primer paso en la construcción de un circuito consiste en representar su función booleana asociada mediante una expresión construida por medio de las operaciones básicas de un álgebra de Boole. De los procedimientos más relevantes se pueden destacar los diagramas de Karnaugh y el método Quine-McCluskey, para el diseño de circuitos eficientes.
 		<br><br>
 	</h5>
-	<h3>3.2 Historia del CMMI</h3>
+	<h3>3.1.1 George Boole</h3>
 	<h5>
-		El CMM (Capability Maturity Model) fue desarrollado en los años 80 por el SEI para mejorar los
-		procesos de desarrollo de software mediante cinco niveles de madurez. Con el tiempo,
-		surgieron múltiples modelos CMM específicos para distintas áreas, lo que generó confusión.
-		Para unificar y expandir su aplicación, se creó el CMMI (Capability Maturity Model Integration)
-		en el 2000, integrando estos modelos y aplicándose a diversas disciplinas más allá del
-		software. Desde entonces, el CMMI ha evolucionado con nuevas versiones, mejorando la
-		agilidad y adaptabilidad de los procesos.
-	</h5>
-	<img src="media/img/sei-partner.png" alt="">
-	<center><small>(Figura 3: Logo del Software Engineering Institute - Carnegie Mellon University, Fuente: https://www.cmkl.ac.th/outreach/sei)
-	</small></center>
-	<h5>
-		<br>
-		<h3>3.2.1 Orígenes y desarrollo inicial: <br></h3>
-		<h5>
-		&emsp;• &emsp; El modelo CMM fue desarrollado inicialmente por el Instituto de Ingeniería de Software
-		(SEI) de la Universidad de Carnegie Mellon en la década de 1980. Su propósito era abordar
-		problemas comunes en el desarrollo de software, tales como la falta de previsibilidad y control
-		en los proyectos de software.<br>
-		&emsp;• &emsp; La primera versión del CMM, conocida como CMM v1.0, se publicó en 1991. Este
-		modelo se centraba en la mejora de los procesos mediante la evaluación de su madurez y la
-		implementación de prácticas de gestión y desarrollo de software.<br>
-		</h5>
-		<br>
-		<h3>3.2.2 Evolución y expansión: <br></h3>
-		<h5>
-		&emsp;• &emsp; En 1993, SEI publicó una versión revisada del CMM (v1.1) que incluía mejoras en las
-		prácticas de gestión de proyectos y en la definición de los niveles de madurez. <br>
-		&emsp;• &emsp;En 1999, se introdujo el CMM v2.0, conocido como CMMI (Capability Maturity Model
-		Integration), que integró los modelos de CMM para el desarrollo de software, el desarrollo de
-		sistemas y la gestión de servicios. CMMI amplió el enfoque del CMM para incluir no solo el
-		desarrollo de software, sino también la gestión de procesos en una organización en general.<br><br>
-		</h5>
-		<img src="media/img/cmmi-3-2.png" alt="">
-		<center><small>(Figura 4: CMMI, Fuente: https://es.linkedin.com/pulse/qu%C3%A9-es-capability-maturity-model-integration-cmmi-isitasoftware) </small></center>
-	<h3><br><br>3.3 Definiciones del CMMI</h3>
-	<h5>
-		Definiciones de CMMI por algunas figuras influyentes en el área: <br><br>
-		
-		<a href="#" onclick="toggleVisibility('hiddenText020a'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 3. 3. 1 &emsp;<i>Definición por Fernando Casafranca </i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020a">
-			<p><br>
-			Fernando Casafranca, un reconocido experto en ingeniería de software y procesos, define el
-			CMMI como un modelo de referencia que proporciona un enfoque estructurado para la mejora
-			de procesos en las organizaciones. Según Casafranca, el CMMI ayuda a las organizaciones a
-			identificar áreas de debilidad en sus procesos de desarrollo y gestión, y proporciona un marco
-			para implementar prácticas que incrementen la madurez de estos procesos. Su definición
-			enfatiza que el CMMI busca mejorar la capacidad de una organización para entregar productos
-			y servicios de alta calidad de manera eficiente. <br> <br>
-			<img src="media/img/casafranca.png" alt="">
-			<center><small>(Figura 5: Fernando Casafranca, Fuente:https://www.esan.edu.pe/directorio/fernando-casafranca)</small></center>
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
-		
-		<br>
-	
-		<a href="#" onclick="toggleVisibility('hiddenText020b'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff;
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 3. 3. 2 &emsp;<i>Definición por Mark C. Paulk </i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020b">
-			<p><br>
-				Mark C. Paulk, uno de los principales autores del CMM y CMMI, define el CMMI como un
-				marco de procesos que proporciona una guía para la mejora continua de la capacidad de
-				procesos de una organización. Según Paulk, el CMMI se centra en la integración de procesos
-				de desarrollo, adquisición y gestión de servicios, ofreciendo un modelo escalable que puede
-				adaptarse a las necesidades específicas de diferentes tipos de organizaciones.<br><br>
-			<img src="media/img/mark_paulk.png" alt="">
-			<center><small>(Figura 6: Mark C. Paulk, Fuente: https://www.computer.org/profiles/mark-paulk)</small></center>
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
-
-		<br>
-
-		<a href="#" onclick="toggleVisibility('hiddenText020c'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff;
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 3. 3. 3 &emsp;<i>Definición por Jim McDonald </i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020c">
-			<p><br>
-				Jim McDonald, un experto en la implementación de CMMI, describe el modelo como un
-				enfoque sistemático para la gestión de procesos que busca asegurar que los procesos de
-				desarrollo y gestión sean efectivos y eficientes. Según McDonald, el CMMI ayuda a las
-				organizaciones a establecer prácticas consistentes y predecibles que permiten la mejora
-				continua y el cumplimiento de estándares de calidad.<br><br>
-			<img src="media/img/mcdonald.png" alt="">
-			<center><small>(Figura 7: Performance Management PNG Images, Fuente: https://www.vecteezy.com/free-png/performance-management)</small></center>
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
-
-		<br>
-
-		<a href="#" onclick="toggleVisibility('hiddenText020d'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff;
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 3. 3. 4 &emsp;<i>Definición por Michael Phillips</i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020d">
-			<p><br>
-				Michael Phillips, otro autor influyente en el área, define el CMMI como una herramienta que
-				ayuda a las organizaciones a evaluar y mejorar la madurez de sus procesos mediante un
-				enfoque basado en la evidencia y la gestión de riesgos. Phillips destaca que el CMMI facilita la
-				integración de prácticas de mejora continua y proporciona un marco para la adopción de
-				prácticas avanzadas en el desarrollo y la gestión de proyectos.<br><br>
-			<img src="media/img/phillips.png" alt="">
-			<center><small>(Figura 8: Michael Phillips, Fuente: https://insights.sei.cmu.edu/authors/mike-phillips/)</small></center>
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
-	</h5>
-	<br>
-	<h3>3. 4 CMMI-DEV ¿Para qué sirve?</h3>
-	<h5>
-		El CMMI abarca tres disciplinas principales que se superponen: <br><br>
-		<strong>&emsp;1. &emsp;Desarrollo de Procesos y Servicios <br>
-		&emsp;2. &emsp;Gestión de Servicios <br>
-		&emsp;3. &emsp;Adquisición de Productos y Servicios </strong><br><br>
-		Estas disciplinas están diseñadas para ayudar a las organizaciones a mejorar su rendimiento y
-		proporcionar un marco sólido para el desarrollo de productos y servicios de calidad. <br><br>
-		El CMMI-DEV (CMMI para el desarrollo de procesos y servicios) es una variante del modelo,
-		enfocada en el desarrollo de productos y servicios. Su objetivo principal es estandarizar las
-		prácticas de desarrollo para garantizar la calidad y satisfacer las necesidades del cliente. La
-		integración de procesos es clave en el CMMI-DEV, lo que permite a las organizaciones
-		mejorar la eficiencia y calidad en sus sectores específicos.
-		
+		Matemático británico nacido en Lincoln, Reino Unido en 1815, creador de un nuevo sistema de cálculo lógico que póstumamente sería llamado Álgebra de Boole. Dicho sistema, en el que las proposiciones se reducen a símbolos sobre los que puede operar matemáticamente, supuso un avance fundamental en el desarrollo de la lógica y, más de un siglo después, hallaría un formidable e insospechado campo de aplicación en la informática y los microprocesadores, cuyo funcionamiento se basa en la lógica binaria de Boole. Falleció en la actual Irlanda en 1864.
 		<br><br>
-		<h3> 3. 4. 1 Enfoque en el desarrollo de productos:</h3><br>
-		<h5>
-			El modelo CMMI-DEV se diseñó para ser una base en iniciativas de mejora de procesos y,
-			específicamente en la valoración, como una ayuda para medir el progreso. Sin embargo, este
-			enfoque ha generado resultados mixtos, ya que es fácil confundir el modelo con una definición
-			de proceso y seguirlo estrictamente, en lugar de utilizarlo como un mapa que identifica áreas
-			de mejora en los procesos existentes. El componente esencial del modelo CMMI es el "área de
-			proceso", que define los objetivos y actividades necesarias para lograrlos.<br><br>
-			<img src="media/img/dev.png" alt="">
-			<center><small>(Figura 9: Portada desarrollo de productos, Fuente: https://www.questionpro.com/blog/es/desarrollo-de-productos/)</small></center>
-			<br><br>
-			Al evaluar una organización, se evaluaría su nivel de funcionamiento y este nivel sería un
-			indicador de su capacidad para administrar los riesgos y, por consiguiente, cumplir sus
-			promesas. Dentro del CMMI-DEV, para evaluar el nivel de funcionamiento de una empresa,
-			existen dos tipos de representaciones principales en el proceso de niveles de madurez: <br><br>
-
-			<a href="#" onclick="toggleVisibility('hiddenText020e'); return false;" style="
-				display: block;
-				font-weight: bold;
-				  color: #000000;
-				  background-color: #f6aa1c;
-				  border: 1px solid #ffffff;
-				 border-radius: 10px;
-				  text-align: center;
-			  
-				 width: auto;
-				height: 70px ">
-				  
-				<strong><br>1.  &emsp;<i>Representación por etapas o continuo </i></strong>
-			</a>
-			<div style="display: none; margin-top: 10px;" id="hiddenText020e">
-				<p><br>
-					La estructura por etapas organiza 22 áreas de proceso, cada una vinculada a uno de los cinco 
-					niveles de madurez de la organización.
-					<br><br>
-					Este enfoque permite evaluar la capacidad de los procesos en cada una de estas áreas,
-					ayudando a la organización a enfocar sus esfuerzos de mejora en los procesos que aporten el
-					mayor valor comercial. Las evaluaciones con este modelo generan perfiles de capacidad en
-					lugar de un simple nivel numérico. Dado que el nivel de madurez es un concepto comprendido
-					por la mayoría de los directivos y ejecutivos, es posible vincular los resultados de una
-					evaluación continua del modelo a las cinco etapas.
-					<br><br>
-					Utilizar el modelo de etapas como base para un programa de mejora de procesos puede ser
-					arriesgado si quienes lo implementan pierden de vista que el CMMI no es un proceso ni un
-					flujo de trabajo, sino una herramienta que establece objetivos a alcanzar mediante estos.
-					Cumplir con estos objetivos permite aumentar la madurez de la organización y la probabilidad
-					de que los procesos funcionen según lo previsto. Así, el propósito de cualquier actividad de
-					mejora debe ser lograr un progreso medible, no solo alcanzar un valor numérico.
-					<br><br>
-					Cada área de proceso incluye componentes necesarios, esperados e informativos. En una
-					evaluación basada en el modelo, solo los componentes necesarios son obligatorios. Estos son
-					los objetivos genéricos y específicos de cada área. Los componentes esperados, que son
-					procedimientos genéricos y específicos para estos objetivos, no son indispensables y pueden
-					ser sustituidos por procedimientos alternativos equivalentes. Los componentes esperados
-					orientan tanto a implementadores como a evaluadores, mientras que los componentes
-					informativos ofrecen detalles útiles para llevar a cabo una iniciativa de mejora basada en
-					CMMI. Estos incluyen subprocedimientos y ejemplos de productos de trabajo típicos.
-					<br><br>
-					En la representación por etapas, cada área de proceso se asocia con una etapa específica, como se muestra en la siguiente imagen.
-					<br><br>
-					<img src="media/img/continuo-1.png" alt="">
-					<center><small>(Figura 10: cmmi_detailstagedrep, Fuente: https://learn.microsoft.com/es-es/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi?view=azure-devops)
-					</small></center>
-					<br><br>
-					En cambio, en la representación continua, las áreas de proceso se agrupan por funciones, según se observa en 
-					la siguiente ilustración. <br><br>
-					<img src="media/img/continuo-2.png" alt="">
-					<center><small>(Figura 11: cmmi_detailcontrep, Fuente: https://learn.microsoft.com/es-es/azure/devops/boards/work-items/guidance/cmmi/guidance-background-to-cmmi?view=azure-devops)
-					</small></center>
-				</p>
-			</div>
-			
-			<script>
-			function toggleVisibility(id) {
-				var element = document.getElementById(id);
-				if (element.style.display === 'none') {
-					element.style.display = 'block';
-				} else {
-					element.style.display = 'none';
-				}
-			}
-			</script>
-	
-			<br>
-	
-			<a href="#" onclick="toggleVisibility('hiddenText020f'); return false;" style="
-				display: block;
-				font-weight: bold;
-				  color: #000000;
-				  background-color: #f6aa1c;
-				  border: 1px solid #ffffff;
-				 border-radius: 10px;
-				  text-align: center;
-			  
-				 width: auto;
-				height: 70px ">
-				  
-				<strong><br> 2. &emsp;<i>Representación de cinco niveles</i></strong>
-			</a>
-			<div style="display: none; margin-top: 10px;" id="hiddenText020f">
-				<p><br>
-					&emsp;Nivel 1. Inicial: 
-					Procesos básicos, no estandarizados ni documentados. Los procesos
-					son impredecibles y reactivos. El éxito depende de los esfuerzos individuales.<br><br>
-					&emsp;Nivel 2. Gestionado: 
-					Los procesos están planificados, documentados y seguidos. Se
-					enfoca en la gestión de proyectos y en la calidad de los productos. <br><br>
-					&emsp;Nivel 3. Definido: 
-					Los procesos son estandarizados y documentados en toda la
-					organización. Existen procedimientos estandarizados y prácticas definidas <br><br>
-					&emsp;Nivel 4. Cuantitativamente Gestionado: 
-					Se miden y controlan los procesos utilizando
-					datos y métricas para asegurar que se cumplan los objetivos. <br><br>
-					&emsp;Nivel 5. Optimización: 
-					Se enfoca en la mejora continua de los procesos y en la
-					innovación. Se realizan ajustes para mejorar el rendimiento y adaptarse a los cambios. <br>
-
-				<img src="media/img/niveles-madurez.png" alt="">
-				<center><small>(Figura 12: Niveles de madurez, Fuente: https://blog.innevo.com/cmmi-y-agile)</small></center>
-				</p>
-			</div>
-			
-			<script>
-			function toggleVisibility(id) {
-				var element = document.getElementById(id);
-				if (element.style.display === 'none') {
-					element.style.display = 'block';
-				} else {
-					element.style.display = 'none';
-				}
-			}
-			</script>  
-		</h5>
+		*George Boole.*  
+		Extraído de: López Medina, L. (Noviembre 2003). Método didáctico de simplificación de funciones booleanas.
 	</h5>
-	<br><br>
-	<h3> 3. 5 Ventajas y desventajas del CMMI-DEV </h3> <br>
+	<h3>3.1.2 Funciones Booleanas</h3>
 	<h5>
-		La adopción efectiva del CMMI-DEV puede proporcionar múltiples beneficios, esto se ve mejor reflejado
-		en la mejora en la calidad del producto:<br><br>
-		&emsp;1. Mediante la estandarización y mejora de procesos. <br>
-		&emsp;2. Integración con otros modelos: Se integra bien con otros modelos<br>
-		&emsp;&emsp;de CMMI, como CMMI for Services (CMMI-SVC) y CMMI for<br> &emsp;&emsp;Acquisition (CMMI-ACQ). <br>
-		&emsp;3. Mayor previsibilidad de Proyectos: Gracias a la planificación<br>
-		&emsp;&emsp; y gestión sistemática.<br>
-		&emsp;4. Satisfacción del cliente: Al cumplir mejor con los requisitos y <br> 
-		&emsp;&emsp;expectativas.<br><br>
-		Aparte de sus beneficios hay que tomar en cuenta:<br> <br>
-		&emsp;1. La implementación de esta herramienta larga, costosa y continua <br>
-		&emsp;2. La aplicación de las practicas es compleja.<br>
-		&emsp;3. Existe complejidad y rigidez en los procesos estructurados. <br>
-		&emsp;4. Tiempos largos para mantener y actualizar los requisitos a cumplir. <br>
-		&emsp;5. Cambios drásticos en la cultura de la empresa a la que se va <br>&emsp;&emsp;implementar. <br>
-		&emsp;6. Desafíos en la alineación de todos los miembros de un equipo en <br>
-		&emsp;&emsp;concreto. <br><br>
-		<img src="media/img/desventajas.png" alt="">
-		<center><small>(Figura 13: ventajas-y-desventajas-de-las-redes-sociales, Fuentes:
-			https://josefacchin.com/ventajas-desventajas-de-las-redes-sociales/)
-			</small></center>
+		El Álgebra de Boole proporciona las operaciones y las leyes para trabajar en el conjunto (0, 1). Los interruptores electrónicos y ópticos se estudian utilizando este conjunto y las reglas del Álgebra de Boole. Las tres operaciones fundamentales del Álgebra de Boole que se usan habitualmente son el complemento, la suma y el producto booleanos.
+		<br><br>
+		<strong>Complemento:</strong> 0', 1', NOT<br>
+		<strong>Suma booleana:</strong> +, OR<br>
+		<strong>Producto booleano:</strong> *, AND<br>
+		<br>
+		A continuación, se presentan sus operaciones y propiedades correspondientes:
+		<br><br>
+		<strong>Complemento:</strong><br>
+		$0' = 1$<br>
+		$1' = 0$<br>
+		<strong>Suma booleana:</strong><br>
+		$1 + 1 = 1$<br>
+		$1 + 0 = 1$<br>
+		$0 + 1 = 1$<br>
+		$0 + 0 = 0$<br>
+		<strong>Producto booleano:</strong><br>
+		$1 \cdot 1 = 1$<br>
+		$1 \cdot 0 = 0$<br>
+		$0 \cdot 1 = 0$<br>
+		$0 \cdot 0 = 0$<br>
 	</h5>
-	<br><br>
-	<h3> 3. 6 Versiones del CMMI</h3><br>
+	<h3>3.1.3 Jerarquía de operaciones</h3>
 	<h5>
-		Como toda herramienta, el CMMI ha evolucionado a lo largo de su historia. Las tecnologías ha avanzado
-		a tal punto en que ha sido necesario mejorar el CMMI para satisfacer las necesidades de las empresas
-		y mantener una competitividad empresarial. <br><br>
-		&emsp;• &emsp; En 1991, el SEI publicó la versión 1.0 del CMM para desarrollo de 
-		<br>&emsp;&emsp;&emsp;software<br>
-		<br>&emsp;• &emsp; Ya en 1997 se inician los trabajos para actualizar el CMM e  
-		<br>&emsp;&emsp;&emsp;incorporar estándares
-		internacionales.<br>
-		<br>&emsp;• &emsp; En el año 2000 se libera la primera versión de este nuevo modelo, 
-		<br>&emsp;&emsp;&emsp;ahora denominado como CMMI.<br>
-		<br>&emsp;• &emsp; En la versión CMMI 1.2 existen 3 áreas de interés cubiertas por  
-		<br>&emsp;&emsp;&emsp;los modelos de CMMI
-		Desarrollo, Adquisición y Servicios.<br>
-		<br>&emsp;• &emsp; Hay tres constelaciones de la versión 1.2 disponibles: CMMI para  
-		<br>&emsp;&emsp;&emsp;el Desarrollo (CMMI-DEV o CMMI for Development), versión 1.2  
-		<br>&emsp;&emsp;&emsp;fue liberado en agosto de 2006. En él se tratan procesos de  
-		<br>&emsp;&emsp;&emsp;desarrollo de productos y servicios. (CMMI-DEV 
-		<br>&emsp;&emsp;&emsp;CMM-DEV+IPPD [Integrate
-		Product And Process Development] ).<br>
-		<br>&emsp;• &emsp; CMMI para adquisición (CMMI-ACQ o CMMI for Acquisition), 
-		<br>&emsp;&emsp;&emsp;versión 1.2 fue liberado en noviembre de 2007. En él se tratan   
-		<br>&emsp;&emsp;&emsp;la gestión de la cadena de suministro, adquisición y contratación  
-		<br>&emsp;&emsp;&emsp;externa en los procesos del gobierno y la industria.<br>
-		<br>&emsp;• &emsp; CMMI (CMMI-SVC o CMMI for Services), está diseñado para  
-		<br>&emsp;&emsp;&emsp;cubrir todas las actividades
-		que requieren gestionar, establecer y  
-		<br>&emsp;&emsp;&emsp;entregar servicios.<br><br>
-		<img src="media/img/cmmiarc.png" alt=""> <br>
-		<center><small>(Figura 14: cmmi-2, Fuente: http://fourtelco.com/implementacion-cmmi/)</small></center>
+		En caso de que las expresiones contengan paréntesis o más de un operador, se recurre a las reglas de precedencia de los operadores:
+		<ol>
+			<li>Complementos</li>
+			<li>Productos booleanos</li>
+			<li>Sumas booleanas</li>
+		</ol>
+		Los resultados acerca de un álgebra de Boole se pueden traducir directamente a resultados acerca de fórmulas proposicionales. Sus correspondencias serían de la siguiente forma:
+		<ol>
+			<li>Complemento: ¬</li>
+			<li>Suma booleana: v</li>
+			<li>Producto booleano: ∧</li>
+		</ol>
+		Sea $B = [0, 1]$. Entonces $B^n = [ (x_1, x_2, \ldots, x_n) | x_i \in B, 1 \leq i \leq n]$ es el conjunto de todas las posibles n-tuplas de ceros y unos. La variable $x$ se llama variable booleana si toma valores en el conjunto $B$, esto es, sus únicos valores posibles son 0 y 1. Una función de $B^n$ en $B$ se llama función booleana de grado $n$.
+		<br><br>
+		La función $F(x, y) = xy$ que va del conjunto de los pares ordenados de valores booleanos al conjunto $\{0, 1\}$ es una función de grado 2 con:
+		<ul>
+			<li>$F(0, 0) = 0$</li>
+			<li>$F(0, 1) = 0$</li>
+			<li>$F(1, 0) = 1$</li>
+			<li>$F(1, 1) = 0$</li>
+		</ul>
+		Como se muestra en la tabla de verdad 1.
+		<br><br>
+		*Tabla de verdad 1.*  
+		Extraído de: Matemática discreta y sus aplicaciones. Rosen K. (2004).
 	</h5>
-	<br><br>
-	<h3> 3. 7 CMMI-DEV V2.0</h3><br>
+	<h3>3.1.4 Propiedades de un álgebra de Boole</h3>
 	<h5>
-	La actualización al CMMI-DEV 2.0 ocurrió en 2018. Gracias a esto, CMMI-DEV pudo abrir las puertas de muchos más mercados.
-	Esta actualización significaba mucho para el avance de la herramienta. Entre las novedades de la actualización tenemos que:<br>
-	<br>&emsp;1. &emsp;Mayor flexibilidad: Adecuado para una variedad de industrias, <br>&emsp;&emsp;&emsp; desde el software hasta gestión de servicios.
-	<br>&emsp;2. &emsp;Enfoque en la agilidad: Adaptado para trabajar con métodos  <br>&emsp;&emsp;&emsp;ágiles, integrando prácticas de
-	mejora continua en ciclos de
-	<br>&emsp;&emsp;&emsp;desarrollo rápido.
-	<br>&emsp;3. &emsp;Desempeño organizacional: Mayor énfasis en el rendimiento <br>&emsp;&emsp;&emsp;empresarial medible y tangible.
-	<br>&emsp;4. &emsp;Evaluaciones más rápidas: Implementa un enfoque ágil en las <br>&emsp;&emsp;&emsp;evaluaciones, permitiendo a las
-	empresas aplicar mejoras con  <br>&emsp;&emsp;&emsp;mayor rapidez.<br><br>
-
-	<h3>3. 7. 1 Características clave del CMMI-DEV V2.0:</h3><br>
-	<h5>
-		Entre las muchas mejoras que tuvo la herramienta hay seis puntos a destacar que sobresalen de los demás: <br><br>
-		<a href="#" onclick="toggleVisibility('hiddenText020-a'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 1.  &emsp;<i>Enfoque modernizado</i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020-a">
-			<p><br>
-				&emsp;o &emsp;<strong>Actualización:</strong> CMMI-DEV v2.0 actualiza y moderniza el marco para que sea más
-				relevante en el contexto actual de desarrollo de productos y servicios, integrando
-				enfoques ágiles y prácticas contemporáneas. <br><br>
-				&emsp;o &emsp;<strong>Beneficio:</strong> Hace que el modelo sea más aplicable y útil para una variedad más
-				amplia de organizaciones, incluidas aquellas que emplean metodologías ágiles.
-				<br> <br>
-
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
-		
-		<br>
-	
-		<a href="#" onclick="toggleVisibility('hiddenText020-b'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff;
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 2. &emsp;<i>Modelo basado en competencias </i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020-b">
-			<p><br>
-				&emsp;o &emsp;<strong>Actualización:</strong> Se centra en competencias y habilidades en lugar de simplemente
-				seguir procesos. Esto permite una mayor flexibilidad en la implementación.
-				<br><br>&emsp;o &emsp;<strong>Beneficio:</strong> Promueve una mayor adaptación a diferentes contextos y enfoques de
-				trabajo <br><br>
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
-
-		<br>
-
-		<a href="#" onclick="toggleVisibility('hiddenText020-c'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff;
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 3. &emsp;<i>Estructura de niveles simplificada </i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020-c">
-			<p><br>
-				&emsp;o &emsp;<strong>Actualización:</strong> Los niveles de madurez se han simplificado y reformulado. En
-				lugar de los cinco niveles tradicionales, el modelo ahora se organiza en niveles de
-				madurez más claros y directos.
-				<br><br>&emsp;o &emsp;<strong>Beneficio:</strong> Facilita la comprensión y la aplicación del modelo.<br><br>
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
-
-		<br>
-
-		<a href="#" onclick="toggleVisibility('hiddenText020-d'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff;
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 4. &emsp;<i>Enfoque en resultados y métricas:</i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020-d">
-			<p><br>
-				&emsp;o &emsp;<strong>Actualización:</strong> CMMI-DEV v2.0 hace un mayor énfasis en la medición y el análisis
-				de resultados para evaluar el desempeño de los procesos y la efectividad de las
-				mejoras.<br><br>
-				&emsp;o &emsp;<strong>Beneficio:</strong> Ayuda a las organizaciones a tomar decisiones basadas en datos y a
-				mejorar continuamente sus procesos.
-				
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
-
-		<br>
-
-		<a href="#" onclick="toggleVisibility('hiddenText020-e'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff;
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 5. &emsp;<i>Proceso de evaluación y mejora</i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020-e">
-			<p><br>
-				&emsp;o &emsp;<strong>Actualización:</strong> Introduce un proceso de evaluación más flexible y eficiente,
-				incluyendo un enfoque en la autoevaluación y la mejora continua.<br><br>
-				&emsp;o &emsp;<strong>Beneficio:</strong> Permite a las organizaciones evaluar su madurez de manera más
-				accesible y a realizar mejoras de manera continua.
-				
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
-		
-		<br>
-
-		<a href="#" onclick="toggleVisibility('hiddenText020-f'); return false;" style="
-    		display: block;
-			font-weight: bold;
-  			color: #000000;
-  			background-color: #f6aa1c;
-  			border: 1px solid #ffffff;
- 			border-radius: 10px;
-  			text-align: center;
-  		
- 			width: auto;
-			height: 70px ">
-  			
-			<strong><br> 6. &emsp;<i>Integración con otras practicas</i></strong>
-		</a>
-		<div style="display: none; margin-top: 10px;" id="hiddenText020-f">
-			<p><br>
-				&emsp;o &emsp;<strong>Actualización:</strong> CMMI-DEV v2.0 se integra mejor con otros modelos de gestión y
-				prácticas modernas, como DevOps y enfoques ágiles.<br><br>
-				&emsp;o &emsp;<strong>Beneficio:</strong> Facilita la adopción de prácticas combinadas y la integración con otros
-				marcos de trabajo.
-				
-			</p>
-		</div>
-		
-		<script>
-		function toggleVisibility(id) {
-			var element = document.getElementById(id);
-			if (element.style.display === 'none') {
-				element.style.display = 'block';
-			} else {
-				element.style.display = 'none';
-			}
-		}
-		</script>
+		Las propiedades en un álgebra de Boole son muchas para enlistar. Sin embargo, las más importantes se muestran en la siguiente tabla. Estas propiedades son particularmente útiles en la simplificación del diseño de circuitos. Se puede demostrar cada una con una tabla de valores.
+		<br><br>
+		*Propiedades del Álgebra de Boole.*  
+		Extraído de: Matemática discreta y sus aplicaciones. Rosen K. (2004).
 	</h5>
-	<br><br>
-	<h3>3. 8 Certificaciones </h3><br>
+	<h3>3.2 Método de Karnaugh</h3>
+	<h3>3.2.1 Circuitos</h3>
 	<h5>
-		La certificación de CMMI no exige capacidades extraordinarias del personal o de los procesos de una empresa. 
-		Básicamente, implementar el modelo es un tema de planeación, organización y supervisión 
-		de las actividades que el personal realiza en su trabajo cotidiano alineándolas a las 
-		buenas prácticas que ofrece el modelo.<br><br>
-		ISACA (responsable de brindar la certificación CMMI) no exige que se contrate ningún servicio de asesoría o
-		asesoría para solicitar la evaluación Benchmark (proceso de análisis que consiste en comparar los productos, 
-		servicios, procesos y otras características de una empresa con las de otras organizaciones o áreas). <br><br>
-		Muchas empresas especializadas en brindar asesoría de la certificación CMMI ofrecen un programa especializado 
-		para comenzar directamente en el nivel tres de madurez. Sin embargo, una empresa puede aspirar a solicitar su evaluación porque su personal, con su propio esfuerzo ha estudiado, 
-		comprendido e implementado el modelo CMMI en sus operaciones y posee la evidencia documental suficiente que lo demuestra. <br><br>
-		Además del prestigio que se gana con la certificación, una empresa también consigue:<br><br>
-		&emsp;1. &emsp;<strong>Ser mejor proveedor:</strong> Entrega de servicios o productos de alta <br>&emsp;&emsp;&emsp;calidad, superando estándares de mercado. <br>
-		&emsp;2. &emsp;<strong>Satisfacción y fidelización de clientes:</strong> Mejora la percepción de <br>&emsp;&emsp;&emsp; valor y la lealtad de los clientes.<br>
-		&emsp;3. &emsp;<strong>Mayor rentabilidad:</strong>Reducción de desperdicios gracias a <br>&emsp;&emsp;&emsp; procesos más eficientes.<br>
-		&emsp;4. &emsp;<strong>Ambiente laboral optimizado:</strong>Mejora en la planificación y <br>&emsp;&emsp;&emsp;control, minimizando urgencias y desorden.<br>
-		&emsp;5. &emsp;<strong>Competitividad:</strong> Requisito en ciertos sectores y por el gobierno <br>&emsp;&emsp;&emsp;para proveedores de TI.<br>
-		&emsp;6. &emsp;<strong>Incremento:</strong>La certificación genera confianza en nuevos clientes.<br><br>
-
-		<strong>&emsp;&emsp;Proceso de certificación:</strong> <br><br>
-		&emsp;1. &emsp;<strong>Planificación:</strong> Se requiere un plan de trabajo y un análisis de <br>&emsp;&emsp;&emsp;fortalezas y debilidades, así como la formación de<br>&emsp;&emsp;&emsp; un equipo de implementación y posible contratación <br>&emsp;&emsp;&emsp;de consultoría.<br>
-		&emsp;2. &emsp;<strong>Implementación y preparación:</strong> Incluye la adaptación de <br>&emsp;&emsp;&emsp;prácticas, 
-		documentación y creación del Equipo de Evaluación.<br>
-		&emsp;3. &emsp;<strong>Evaluación Benchmark:</strong> Entrevistas y revisión de evidencias <br>&emsp;&emsp;&emsp;durante cinco días sin interrumpir las operaciones.<br>
-		&emsp;4. &emsp;<strong>Publicación de resultados:</strong> ISACA emite el certificado en unos <br>&emsp;&emsp;&emsp;30 días tras la evaluación.<br>
-
-
+		El álgebra de Boole se utiliza para modelos de circuitos de dispositivos electrónicos. Cada circuito se puede diseñar utilizando las propiedades del álgebra de Boole vistas anteriormente. Los elementos básicos de los circuitos se llaman puertas lógicas, y cada una implementa una operación booleana. Al depender únicamente de los elementos de entrada (y no del estado actual del dispositivo), los diagramas con estas puertas lógicas son llamados redes lógicas o circuitos combinacionales. Es importante mencionar que estos diagramas se leen de izquierda a derecha y de arriba hacia abajo. Los flujos de la parte izquierda de cada puerta son variables booleanas entrantes, las cuales pueden variar en cantidad. El flujo de la parte derecha de cada puerta lógica es la salida, y solo puede haber una única. Esta se puede integrar a otra puerta posteriormente.
+		<br><br>
+		*Puertas lógicas.*  
+		Extraído de: Matemáticas Discretas, aplicaciones y ejercicios. (Villalpando Becerra, J. F., Garcia Sandoval, A., 2014).
+	</h5>
+	<h3>3.2.2 Maurice Karnaugh</h3>
+	<h5>
+		Maurice Karnaugh, nacido en la ciudad de Nueva York, se licenció en el City College de Nueva York y se doctoró en la Universidad de Yale. Fue miembro del personal técnico de los Bell Laboratories de 1952 a 1966 y director de investigación y desarrollo en la división de sistemas federales de AT&T de 1966 a 1970. En 1970 se incorporó a IBM como miembro del personal de investigación. Karnaugh ha hecho contribuciones fundamentales a la aplicación de técnicas digitales tanto en la computación como en las telecomunicaciones. Sus áreas de interés más recientes incluyen los sistemas expertos y los métodos heurísticos de búsqueda.
+		<br><br>
+		*Maurice Karnaugh.*  
+		Extraído de: Dispositivos y circuitos electrónicos. (Donald A. Neamen., 2012).
+	</h5>
+	<h3>3.2.3 Diagramas de Karnaugh</h3>
+	<h5>
+		El diagrama de Karnaugh es un método gráfico cuyo objetivo es hallar términos que se pueden combinar en el caso de funciones booleanas que dependen de relativamente pocas variables. Este método fue introducido por Maurice Karnaugh en 1953. El diagrama de Karnaugh, o K-diagrama, no proporciona un método visual para simplificar una forma normal disyuntiva, pero no son adecuados para automatizar este proceso.
+		Es importante resaltar tres conceptos que serán aplicados posteriormente en la minimización con K-diagramas en el álgebra de Boole:
+		<ul>
+			<li><strong>Minitérmino:</strong> es un término producto donde aparecen todas las variables de la función, con o sin su complemento, una única vez.</li>
+			<li><strong>Maxitérmino:</strong> es un término de suma donde aparecen todas las variables de la función, con o sin su complemento, una única vez.</li>
+			<li><strong>Término canónico:</strong> es toda suma o producto que contenga a todas las variables de una función. Puede combinar minitérminos en una forma normal disyuntiva (sumas) o maxitérminos en una forma normal conmutativa (productos).</li>
+		</ul>
+		Las funciones se acomodan en forma de matriz, representando la función en ella como coordenadas.
+		<br><br>
+		**Ejemplo:** $F(x, y) = xy' + x'y$
+		<br><br>
+		*Diagrama 1*  
+		Los minitérminos se traducen en la tabla colocando números uno donde se encuentren. La tabla se lee de la primera columna (la que tiene la variable $x$) y después la primera fila (la que tiene la variable $y$).
+		<br><br>
+		**Ejemplo 2:** $F(x, y) = xy' + x'y + x'y'$
+		<br><br>
+		*Diagrama 2*  
+		Siempre que en el K-diagrama haya números uno adyacentes, los minitérminos representados por estas celdas se pueden combinar entre sí dando lugar a un término que depende solo de una de las variables. En el ejemplo anterior $xy'$ y $x'y'$ están representadas por celdas adyacentes y pueden combinarse para producir $y'$, ya que $xy' + x'y' = (x + x')y' = y'$. Además, si hay unos en las cuatro celdas, pueden combinarse los cuatro minitérminos para dar lugar a uno solo, que será la expresión booleana 1 que no depende de ninguna de las variables. Es decir:
+		<br><br>
+		*Diagrama 3*  
+		*Diagrama 4*  
+		*Diagrama 5*  
+		El objetivo es identificar los bloques de mayor tamaño posible y cubrir todos los unos con el menor número posible de bloques, usando en primer lugar los bloques más grandes y empleando siempre los bloques del mayor tamaño que sea posible.
+		<br><br>
+		*Propiedades y resultados de los K-diagramas*  
+		Bloques de diagrama de Karnaugh para dos variables: “$x$”, “$y$”.  
+		Extraído de: Dispositivos y circuitos electrónicos. (Donald A. Neamen., 2012).
+		<br><br>
+		Bloques de diagrama de Karnaugh para tres variables: “$x$”, “$y$”, “$z$”.  
+		Extraído de: Dispositivos y circuitos electrónicos. (Donald A. Neamen., 2012).
+		<br><br>
+		Bloques de diagrama de Karnaugh para cuatro variables: “$x$”, “$y$”, “$z$”, “$w$”.  
+		Extraído de: Dispositivos y circuitos electrónicos. (Donald A. Neamen., 2012).
+	</h5>
+	<h3>3.3 Método de Quine-McCluskey</h3>
+	<h5>
+		El método de Quine-McCluskey cumple con la necesidad de utilizar un procedimiento para simplificar desarrollos en sumas de productos, que pueda automatizarse. Se puede utilizar para cualquier cantidad de variables. Fue desarrollado en los años cincuenta por W. V. Quine y E. J. McCluskey. Básicamente, el método de Quine-McCluskey consta de dos partes. La primera parte determina qué términos son candidatos para incluir en un desarrollo mínimo como suma booleana de productos booleanos y la segunda parte determina cuáles de esos términos se utilizan finalmente.
+		<br><br>
+		**Ejemplo:** obtener una expresión minimal equivalente a $xyz + xy'z + x'y'z + x'y'z'$.  
+		Se representan los minitérminos del desarrollo mediante cadenas de bits. Donde aparezca una variable booleana en su estado normal ($x$), se escribirá 1 bit. En caso de aparecer con su complemento ($x'$), se escribirá 0 bits. Se sigue el proceso con el resto de las variables. Eventualmente se cuenta el número de unos que se encuentran en la columna de Cadena de bits, como se muestra en la siguiente tabla:
+		<br><br>
+		*Tabla de valores.*  
+		Extraído de: Matemática discreta y sus aplicaciones. (Rosen K., 2004).
+		<br><br>
+		El método de Quine-McCluskey utiliza la siguiente secuencia de pasos para simplificar un desarrollo en suma de productos, en el siguiente ejemplo:
+		<br><br>
+		**Ejemplo:** minimizar con el método de Quine-McCluskey la siguiente fórmula booleana  
+		$f(x,y,z,w) = wxyz + wxyz' + wxy'z' + wx'yz + wx'y'z + wx'y'z' + w'xy'z + w'x'yz + w'x'yz'$  
+		Notación en suma decimal: $F(w,x,y,z)= \sum m(2,3,5,8,9,11,12,14,15)$
+		<br><br>
+		**Paso 1:** se traducen las variables booleanas a bits, así como se cuenta el número de unos.
+		<br><br>
+		*Tabla 1*  
+		**Paso 2:** se organiza la tabla de menor a mayor en cuanto a número de unos, y se forman grupos respecto a la misma cantidad de unos.
+		<br><br>
+		*Tabla 2*  
+		**Paso 3:** identificar cuáles cadenas de bits cambian en solo 1 bit, y reemplazarlo con un “-”. Se compara el grupo n con el grupo n + 1 (el uno con el dos, el dos con el tres…)
+		<br><br>
+		*Tabla 3*  
+		**Paso 4:** se repite el mismo procedimiento del Paso 3, pero ahora formando grupos que difieran de dos bits, con base en la Tabla 2. Para esto, se toman en cuenta los términos cuyas representaciones en bits tengan un guion en la misma posición y difieran de un bit.
+		<br><br>
+		El proceso continúa, sin embargo, ya no existen más posibilidades en este ejemplo.
+		<br><br>
+		**Paso 5:** se traducen las representaciones en bits a variables booleanas. Estos términos serán llamados implicantes.
+		<br><br>
+		*Tabla 4*  
+		**Paso 6:** se crea otra tabla donde se acomodan los implicantes y los valores de las variables booleanas en sistema decimal. Se colocará una X de acuerdo al minitérmino que aparezca en los valores decimales posteriores a la columna de los minitérminos (MT). Finalmente, se verifica que los implicantes seleccionados cubran todas las columnas.
+		<ul>
+			<li>$1 1 1 1 = 15$</li>
+			<li>$1 1 1 0 = 14$</li>
+			<li>$1 1 0 0 = 12$</li>
+			<li>$1 0 1 1 = 11$</li>
+			<li>$1 0 0 1 = 9$</li>
+			<li>$1 0 0 0 = 8$</li>
+			<li>$0 1 0 1 = 5$</li>
+			<li>$0 0 1 1 = 3$</li>
+			<li>$0 0 1 0 = 2$</li>
+		</ul>
+		*Tabla 5*  
+		*Tabla 6*  
+		**Paso 7:** Los implicantes que solo tengan una X se agregan de inmediato a la función minimizada. Sin embargo, para que el método se considere concluido, se deben buscar más opciones para cubrir todas las columnas de la Tabla 4. Se seleccionan las siguientes, por ejemplo:
+		<br><br>
+		*Tabla 7*  
+		**Paso 8:** Los implicantes coloreados serán los minitérminos de la función minimizada. A partir de este punto, con ayuda del Álgebra de Boole, se reduce más la expresión de ser posible.
+		<br><br>
+		**Función minimizada:**  
+		$f(x,y,z,w) = xyz + y'zw + xy'w + xz'w' + x'y'z + w'xy'z$  
 	</h5>
 	<br><br><br><br><br><br><br>	
 </body>

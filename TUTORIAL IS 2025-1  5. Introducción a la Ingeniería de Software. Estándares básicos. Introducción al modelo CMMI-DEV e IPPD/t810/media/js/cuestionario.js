@@ -1,7 +1,7 @@
 /***************************
-* Autor: Equipo 3
+* Autor: Equipo 6
 * Estructuras Discretas
-* 2025-1
+* 2025-2
 ****************************/
 
 function valuap(respuest) {

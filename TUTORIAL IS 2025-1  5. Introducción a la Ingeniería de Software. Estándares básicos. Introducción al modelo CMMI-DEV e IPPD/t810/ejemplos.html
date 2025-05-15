@@ -15,14 +15,22 @@
 	<script src="media/js/ui.js" type="text/javascript"></script>
 	
 	<link rel="stylesheet" href="media/css/ui.css" type="text/css" />
-	
-	<!-- El siguiente CSS puede utilizarse para hacer los ajustes necesarios de los contenidos -->
 	<link rel="stylesheet" href="media/css/ejemplos.css" type="text/css" />
 
+	<script>
+		function toggleVisibility(id) {
+			var element = document.getElementById(id);
+			if (element.style.display === 'none' || element.style.display === '') {
+				element.style.display = 'block';
+			} else {
+				element.style.display = 'none';
+			}
+		}
+	</script>
 </head>
+<body>
 	<section class="main clearfix">
 		<section class="top">	
-			<img src="img\ejemBK.jpg" class="media" alt=""/>
             <div class="wrapper content_header clearfix">
                 <center><h1 class="title"><br><h1><t>4. EJEMPLOS</t></center>
 			</div>
@@ -32,1319 +40,231 @@
 			<div class="content"> 
                 <ul>
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>1. Lokhead Martin:</h3></li>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020a'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i>Desarrollo de la certificación </i></strong>
+                    <li><h3>1. Resolver la función Booleana como producto MAXTERM:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText1'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>F(a,b,c)=a+b´*c</i></strong>
                 </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020a">
+                <div style="display: none; margin-top: 10px;" id="hiddenText1">
                     <p>
                     <h4>
-                    <br>
-                        &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5. <br><br>
-                        &emsp;&emsp;•&emsp; Año de certificación inicial: 2006.<br><br>
-                        &emsp;&emsp;•&emsp; Unidades certificadas: Sistemas de Información y &emsp;&emsp;&emsp;&emsp;Soluciones Globales.<br><br>
-                        &emsp;&emsp;•&emsp; Desafíos: Integración de múltiples procesos <br> &emsp;&emsp;&emsp;&emsp; heredados de diferentes divisiones.<br><br>
-                        &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020a1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020a1">
-                            <p><br>
-                            &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 30% en defectos de software criticos &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        Primero, se obtiene la tabla de verdad de la función y luego se toman los MAXTERM. Enseguida, se evalúa la función para todas las combinaciones y se toman los MAXTERM de la tabla para los cuales la función lógica vale 0. 
+                        <br><br>
+                        Por lo tanto, la respuesta es:
                         <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020a2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020a2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 20% en la precisión de estimaciones  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;proyectos <br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        F(a,b,c) = (a + b + c)(a + b´ + c)(a +b´ + c´)
+                        <br><br>
+                        También se puede expresar como:
                         <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020a3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020a3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Ahorro anual de $15,000,000 en costos &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; de desarrollo.<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-                        <p>&emsp;&emsp;•&emsp; Implementación: Proceso gradual de 5 años,<br> &emsp;&emsp;&emsp;&emsp; comenzando con proyectos piloto y <br>&emsp;&emsp;&emsp;&emsp;expandiéndose a toda la organización <br><br></p>    
+                        F(a,b,c) = II M (0,2,3)
+                        <br><br>
+                        Por lo que el producto de los MAXTERM es 0,2,3.
                     </h4>
                     </p>
                 </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-            
-                <br>
-                    </div>
-                
-                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>2. Accenture:</h3></li>
-                    <br>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020b'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i>Desarrollo de la certificación </i></strong>
-                </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020b">
-                    <p>
-                    <h4>
-                    <br>
-                        &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5. <br><br>
-                        &emsp;&emsp;•&emsp; Año de certificación inicial: 2013.<br><br>
-                        &emsp;&emsp;•&emsp; Unidades certificadas: Centros de Desarrollo Global <br>&emsp;&emsp;&emsp;&emsp; en India, Filipinas y China <br><br>
-                        &emsp;&emsp;•&emsp; Desafíos: Estandarización de procesos en equipos <br>&emsp;&emsp;&emsp;&emsp; geográficamente dispersos <br><br>
-                        &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020b1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020b1">
-                            <p><br>
-                            &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 25% en el tiempo de entrega de &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;proyectos<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020b2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020b2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 40% en la satisfacción del cliente. <br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020b3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020b3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Incremento del 15% en la productividad del &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;desarrollador.<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-                        <p>&emsp;&emsp;•&emsp; Implementación: Programa de transformación de 3 <br>&emsp;&emsp;&emsp;&emsp;años, incluyendo capacitación intensiva y rediseño de <br>&emsp;&emsp;&emsp;&emsp;procesos.<br><br></p>
-                    </h4>
-                    </p>
-                </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-                <br>
-                    </div>    
 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>3. Tata Consultancy Services (TCS):</h3></li>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020c'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i>Desarrollo de la certificación </i></strong>
+                    <li><h3>2. Hallar la expresión booleana minimizada:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText2'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>Tabla de verdad</i></strong>
                 </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020c">
+                <div style="display: none; margin-top: 10px;" id="hiddenText2">
                     <p>
                     <h4>
-                    <br>
-                    &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5. <br><br>
-                    &emsp;&emsp;•&emsp; Año de certificación inicial: 2004.<br><br>
-                    &emsp;&emsp;•&emsp; Unidades certificadas: Múltiples centros de desarrollo <br>&emsp;&emsp;&emsp;&emsp; en India y otros países. <br><br>
-                    &emsp;&emsp;•&emsp; Desafíos: Mantener la calidad y eficiencia durante un <br>&emsp;&emsp;&emsp;&emsp;rápido crecimiento organizacional. <br><br>
-                        &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020c1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020c1">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 35% en retrabajos de proyectos <br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        Paso 1. Hallar los Minitérminos:
                         <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020c2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020c2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 50% en la predicción de <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;cronogramas de proyectos. <br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        F = A’B’C’ + A’B’C + A’BC’ + A’BC + AB’C’ + AB’C + ABC’ + ABC
+                        <br><br>
+                        Paso 2. Simplificar mediante las propiedades hasta llegar a la expresión mínima:
                         <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020c3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020c3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Aumento del 20% en la retención de clientes.<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        F = A’B’(C’+C) + A’BC’ + A’BC + AB’C’ + AB’C + AB(C’ + C)
                         <br>
-                        <p>&emsp;&emsp;•&emsp; Implementación: Enfoque de arriba hacia abajo, con <br>&emsp;&emsp;&emsp;&emsp;fuerte compromiso de la alta dirección y programas<br>&emsp;&emsp;&emsp;&emsp;de mentoría interna.<br><br></p>
+                        F = A’B’ + A’BC’ + A’BC + AB’(C’ + C) + AB
+                        <br>
+                        F = A’B’ + A’B + AB’ + AB
+                        <br>
+                        Finalmente la expresión queda: 1
                     </h4>
                     </p>
                 </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-                <br>     
-                    </div>    
 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>4. Infosys:</h3></li>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020d'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i>Desarrollo de la certificación </i></strong>
+                    <li><h3>3. Expresar como una suma de MINTERM:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText3'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>F(a,b,c)=a+b´*c</i></strong>
                 </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020d">
+                <div style="display: none; margin-top: 10px;" id="hiddenText3">
                     <p>
                     <h4>
-                    <br>
-                    &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5. <br><br>
-                    &emsp;&emsp;•&emsp; Año de certificación inicial: 2002.<br><br>
-                    &emsp;&emsp;•&emsp; Unidades certificadas: Todas las unidades de <br>&emsp;&emsp;&emsp;&emsp;desarrollo de software globales. <br><br>
-                    &emsp;&emsp;•&emsp; Desafíos: Adaptación de CMMI a metodologías ágiles <br>&emsp;&emsp;&emsp;&emsp;emergentes. <br><br>
-                    &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020d1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020d1">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 40% en defectos post-entrega <br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        Primero se obtiene la tabla de verdad y luego se toman los MINTERM. Posteriormente, se evalúa la función para todas las combinaciones y se toman los MINTERM de la tabla para los cuales la función vale 1.
+                        <br><br>
+                        Por lo tanto, la respuesta es:
                         <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020d2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020d2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 30% en la utilización de recursos  <br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        F(a,b,c)=a’b’c+ab’c’+ab’c+abc’+abc
+                        <br><br>
+                        Otra notación que se puede utilizar es:
                         <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020d3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020d3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Incremento del 25% en proyectos entregados &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; a tiempo y presupuesto<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-                        <p>&emsp;&emsp;•&emsp; Implementación: Integración de CMMI con el marco <br>&emsp;&emsp;&emsp;&emsp;de calidad interno "Infosys Quality System", evolución <br>&emsp;&emsp;&emsp;&emsp;continua durante más de una década<br><br></p>
+                        F(a,b,c)=∑m(1,4,5,6,7)
+                        <br><br>
+                        Lo que significa la suma de los MINTERM 1,4,5,6,7.
                     </h4>
                     </p>
                 </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-                <br>    
-                    </div>    
 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>5. HCL Technologies:</h3></li>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020f'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i> Desarrollo de la certificación </i></strong>
+                    <li><h3>4. Usando el método Quine-McCluskey:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText4'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>F(a,b,c,d,e)= ∑m(1,2,3,5,9,10,11,18,19,20,21,23,25,26,27)</i></strong>
                 </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020f">
+                <div style="display: none; margin-top: 10px;" id="hiddenText4">
                     <p>
                     <h4>
-                    <br>
-                    &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5. <br><br>
-                    &emsp;&emsp;•&emsp; Año de certificación inicial: 2004.<br><br>
-                    &emsp;&emsp;•&emsp; Unidades certificadas: Centros de desarrollo en India, <br>&emsp;&emsp;&emsp;&emsp;Estados Unidos y Europa. <br><br>
-                    &emsp;&emsp;•&emsp; Desafíos: Alinear CMMI con las necesidades <br>&emsp;&emsp;&emsp;&emsp;específicas de diferentes industrias atendidas <br><br>
-                        &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020f1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020f1">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 45% en detección temprana de <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;defectos<br>
-
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        Tabla de combinaciones
+                        <br><br>
+                        Implicantes primos esenciales:
                         <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020f2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020f2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 20% en los costos de garantía <br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        1010X→AB’CD’
                         <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020f3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020f3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Aumento del 30% en la satisfacción del <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; empleado debido a procesos más claros.<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
+                        X10X1→BC’E’
                         <br>
-                        <p>&emsp;&emsp;•&emsp; Implementación: Enfoque por fases, comenzando con <br>&emsp;&emsp;&emsp;&emsp;unidades clave y expandiéndose gradualmente, con<br>&emsp;&emsp;&emsp;&emsp;con una fuerte énfasis en la capacitación y el cambio<br>&emsp;&emsp;&emsp;&emsp; cultural<br><br></p>    
+                        XX01X→C’D
+                        <br><br>
+                        Una vez que tenemos los implicantes primos esenciales, ya tenemos una parte de la función simplificada. Ahora tendremos que ver los implicantes primos secundarios que tienen menor costo, es decir, que tienen menos variables en el término.
+                        <br><br>
+                        Teorema: 'Sean a y b dos términos implicantes primos de una tabla reducida de tal manera que el costo de a sea menor o igual al costo de b. Entonces, si a domina a b o si a y b son intercambiables existe una suma mínima de productos que no incluye a b.
+                        <br><br>
+                        Utilizamos los implicantes que no se han tomado en cuenta como implicantes primos esenciales, con las columnas que no han sido eliminadas de la tabla de simplificación de los implicantes primos para buscar los implicantes primos secundarios.
+                        <br><br>
+                        El implicante primo 00X01 cubre el mintérmino mi y el mintérmino m5 mientras que el implicante primo X0101 cubre únicamente al mintérmino m5 entre estos dos el que tiene menos costo es el 00X01, luego el implicante 10X11 y 101X1 ambos cubren únicamente al mintérmino m2s tomamos cualquiera de los dos.
+                        <br><br>
+                        Implicantes primos secundarios:
+                        <br>
+                        00X01→A’B’D’E 10X11→AB’DE
+                        <br><br>
+                        Como se puede observar, existen implicantes primos esenciales y secundarios. La función resultante simplificada es la operación OR de todos estos implicantes.
+                        <br><br>
+                        F(A, B, C, D, E) = AB'CD' + BC’E + C'D + A'B'D'E + AB'DE
                     </h4>
                     </p>
                 </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-                <br>
-
-                    </div>    
-                    
-                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>6. Cognizant:</h3></li>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020e'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i>Desarrollo de la certificación </i></strong>
-                </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020e">
-                    <p>
-                    <h4>
-                    <br>
-                    &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5.<br><br>
-                    &emsp;&emsp;•&emsp; Año de certificación inicial: 2007.<br><br>
-                    &emsp;&emsp;•&emsp; Unidades certificadas: Centros de entrega en India, <br>&emsp;&emsp;&emsp;&emsp;Europa y Norteamérica.<br><br>
-                    &emsp;&emsp;•&emsp; Desafíos: Mantener la consistencia de procesos <br>&emsp;&emsp;&emsp;&emsp;durante un rápido crecimiento global.<br><br>
-                        &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020e1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020e1">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 30% en el tiempo de ciclo de &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;desarrollo.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020e2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020e2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 40% en la precisión de estimaciones <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;de esfuerzo.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020e3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020e3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Incremento del 20% en la productividad general &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;del equipo.<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-                        <p>&emsp;&emsp;•&emsp; Implementación: Programa de transformación de 4<br>&emsp;&emsp;&emsp;&emsp; años, con fuerte énfasis en la automatización de <br>&emsp;&emsp;&emsp;&emsp;procesos y métricas.<br><br></p>
-                    </h4>
-                    </p>
-                </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-                <br>
-			        </div>
-                    
-                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>7. Wipro:</h3></li>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020g'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i>Desarrollo de la certificación </i></strong>
-                </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020g">
-                    <p>
-                    <h4>
-                    <br>
-                    &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5.<br><br>
-                    &emsp;&emsp;•&emsp; Año de certificación inicial: 2001.<br><br>
-                    &emsp;&emsp;•&emsp; Unidades certificadas: Todas las unidades de<br>&emsp;&emsp;&emsp;&emsp; desarrollo de software globales.<br><br>
-                    &emsp;&emsp;•&emsp; Desafíos: Integrar CMMI con otros marcos de calidad<br>&emsp;&emsp;&emsp;&emsp; como Six Sigma.<br><br>
-                        &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020g1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020g1">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 50% en defectos críticos.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020g2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020g2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 35% en la reutilización de código.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020g3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020g3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Aumento del 25% en la eficiencia operativa &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;general.<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-                        <p>&emsp;&emsp;•&emsp; Implementación: Enfoque holístico que combina CMMI<br>&emsp;&emsp;&emsp;&emsp; con iniciativas de calidad internas, evolución<br>&emsp;&emsp;&emsp;&emsp; continua durante más de 15 años.<br><br></p>    
-                    </h4>
-                    </p>
-                </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-                <br>
-                    </div>
 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>8. IBM Global Services:</h3></li>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020h'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i>Desarrollo de la certificación </i></strong>
+                    <li><h3>5. Obtener la expresión mínima con el método de Karnaugh:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText5'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>F(A,B,C)=ABC' + A'BC' + ABC + AB'C</i></strong>
                 </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020h">
+                <div style="display: none; margin-top: 10px;" id="hiddenText5">
                     <p>
                     <h4>
-                    <br>
-                    &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5.<br><br>
-                    &emsp;&emsp;•&emsp; Año de certificación inicial: 2003.<br><br>
-                    &emsp;&emsp;•&emsp; Unidades certificadas: Múltiples centros de desarrollo<br>&emsp;&emsp;&emsp;&emsp; en América, Europa y Asia.<br><br>
-                    &emsp;&emsp;•&emsp; Desafíos: Adaptar CMMI a una amplia gama de<br>&emsp;&emsp;&emsp;&emsp; servicios y tecnologías.<br><br>
-                        &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020h1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020h1">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 40% en la previsibilidad de<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; proyectos.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020h2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020h2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 25% en el costo total de <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;propiedad para clientes.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020h3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020h3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Incremento del 30% en la satisfacción del<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;cliente.<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-                        <p>&emsp;&emsp;•&emsp; Implementación: Programa global de varios años, con <br>&emsp;&emsp;&emsp;&emsp;fuerte énfasis en la gestión del conocimiento y la<br>&emsp;&emsp;&emsp;&emsp; mejora continua.<br><br></p>    
+                        Para construir el diagrama de Karnaugh, se hace una tabla de verdad para visualizar de forma binaria los minitérminos de la fórmula booleana.
+                        <br><br>
+                        Se construye el diagrama de Karnaugh para una función booleana de tres variables.
+                        <br><br>
+                        Se colocan números uno en los recuadros donde los valores de las variables coinciden con los que están en la tabla de verdad, que, además, a su vez, tienen un número uno en la columna de salida. Las casillas vacías se rellenan con ceros.
+                        <br><br>
+                        Se marcan las adyacencias que se identifiquen.
+                        <br><br>
+                        Para transcribir las adyacencias a minitérminos, se verifica que los valores de las variables en el diagrama de Karnaugh se mantienen constantes. Por ejemplo, la adyacencia gris tiene a A como constante con 1, pero B no lo es, por lo que no se agrega. C sí lo es. Se hace el mismo análisis con la otra adyacencia para obtener la fórmula minimizada.
+                        <br><br>
+                        Los minitérminos obtenidos se conectan con sumas para obtener una función en una forma normal disyuntiva.
                     </h4>
                     </p>
                 </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-                <br>
-                    </div>
 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>9. Capgemini:</h3></li>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020j'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i>Desarrollo de la certificación </i></strong>
+                    <li><h3>6. Obtener la expresión mínima de la siguiente fórmula booleana:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText6'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>F(A,B,C)</i></strong>
                 </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020j">
+                <div style="display: none; margin-top: 10px;" id="hiddenText6">
                     <p>
                     <h4>
-                    <br>
-                    &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5.<br><br>
-                    &emsp;&emsp;•&emsp; Año de certificación inicial: 2008.<br><br>
-                    &emsp;&emsp;•&emsp; Unidades certificadas: Centros de desarrollo en India, <br>&emsp;&emsp;&emsp;&emsp; Polonia y otros países.<br><br>
-                    &emsp;&emsp;•&emsp; Desafíos: Armonizar CMMI con metodologías ágiles.<br><br>
-                        &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020j1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020j1">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 35% en el tiempo de <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;lanzamiento al mercado.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020j2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020j2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 40% en la calidad del código.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020j3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020j3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Aumento del 20% en la satisfacción del<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;empleado.<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-                        <p> &emsp;&emsp;•&emsp; Implementación: Enfoque adaptativo que integra <br>&emsp;&emsp;&emsp;&emsp;CMMI con prácticas ágiles, con un fuerte componente<br>&emsp;&emsp;&emsp;&emsp;de innovación en procesos.<br><br></p>    
+                        Para construir el diagrama de Karnaugh, se hace una tabla de verdad para visualizar de forma binaria los minitérminos de la fórmula booleana.
+                        <br><br>
+                        Se construye el diagrama de Karnaugh para una función booleana de tres variables.
+                        <br><br>
+                        Se colocan números uno en los recuadros donde los valores de las variables coinciden con los que están en la tabla de verdad, que, además, a su vez, tienen un número uno en la columna de salida. Las casillas vacías se rellenan con ceros.
+                        <br><br>
+                        Se marcan las adyacencias que se identifiquen.
+                        <br><br>
+                        Para transcribir las adyacencias a minitérminos, se verifica que los valores de las variables en el diagrama de Karnaugh se mantienen constantes. Por ejemplo, la adyacencia verde tiene a A, B y D constantes, pero no a C. Por lo tanto, la C se ignora, y las demás variables se incluyen en la forma minimizada.
+                        <br><br>
+                        Los minitérminos obtenidos se conectan con sumas para obtener una función en una forma normal disyuntiva.
                     </h4>
                     </p>
                 </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-                <br>
-                    </div>
 
                     <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
-                    <li><h3>10. Tech Mahindra:</h3></li>
-                    <br><a href="#" onclick="toggleVisibility('hiddenText020k'); return false;" style="
-                    display: block;
-                    font-weight: bold;
-                    color: #000000;
-                    background-color: #f6aa1c;
-                    border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                    border-radius: 10px;
-                    text-align: center;
-                    width: auto;
-                    height: 70px ">
-                  
-                    <strong><br> ❖ &emsp;<i>Desarrollo de la certificación </i></strong>
+                    <li><h3>7. Expresar la función booleana como una suma de MINTERM:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText7'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>F(a,b,c) = a + b´ * c</i></strong>
                 </a>
-                <div style="display: none; margin-top: 10px;" id="hiddenText020k">
+                <div style="display: none; margin-top: 10px;" id="hiddenText7">
                     <p>
                     <h4>
-                    <br>
-                    &emsp;&emsp;•&emsp; Nivel CMMI alcanzado: 5.<br><br>
-                    &emsp;&emsp;•&emsp; Año de certificación inicial: 2006.<br><br>
-                    &emsp;&emsp;•&emsp; Unidades certificadas: Principales centros de<br>&emsp;&emsp;&emsp; desarrollo en India y otros países.<br><br>
-                    &emsp;&emsp;•&emsp; Desafíos: Mantener la certificación durante fusiones y <br>&emsp;&emsp;&emsp;adquisiciones significativas.<br><br>
-                        &emsp;&emsp;•&emsp; Beneficios clave:<br><br>
-                        <a href="#" onclick="toggleVisibility('hiddenText020k1'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020k1">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Reducción del 30% en el costo de calidad.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020k2'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020k2">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Mejora del 45% en la detección temprana de &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;defectos.<br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-            
-                        <a href="#" onclick="toggleVisibility('hiddenText020k3'); return false;" style="
-                            display: block;
-                            font-weight: bold;
-                            color: #000000;
-                            background-color: #f6aa1c;
-                            border: 1px solid #ffffff; /* Añade un contorno de 1px de ancho con color rojo (#ff0000) */
-                            border-radius: 10px;
-                            text-align: center;
-                            width: auto;
-                            height: 70px ">
-                  
-                            <strong><br> ❖
-                        </a>
-                        <div style="display: none; margin-top: 10px;" id="hiddenText020k3">
-                            <p><br>
-                                &emsp;&emsp;&emsp;&emsp;&emsp;•&emsp; Incremento del 25% en la retención de talento &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;clave.<br><br>
-                            </p>
-                        </div>
-                        <script>
-                            function toggleVisibility(id) {
-                                var element = document.getElementById(id);
-                                if (element.style.display === 'none') {
-                                    element.style.display = 'block';
-                                } else {
-                                    element.style.display = 'none';
-                                }
-                            }
-                        </script>
-                        <br>
-                        <p> &emsp;&emsp;•&emsp; Implementación: Programa de transformación de 5 <br>&emsp;&emsp;&emsp;años, con énfasis en la creación de una cultura <br>&emsp;&emsp;&emsp;de calidad y mejora continua.<br><br></p>    
+                        Primero se obtiene la tabla de verdad y luego se toman los MINTERM.
                     </h4>
                     </p>
                 </div>
-            
-                <script>
-                function toggleVisibility(id) {
-                    var element = document.getElementById(id);
-                    if (element.style.display === 'none') {
-                        element.style.display = 'block';
-                    } else {
-                        element.style.display = 'none';
-                    }
-                }
-                </script>
-                <br>
-                    </div>
-                    <br><br><br><br>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>8. Sea la función lógica:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText8'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>F(a,b,c) = a * (b + c)</i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText8">
+                    <p>
+                    <h4>
+                        Obtener los MINTERMS y MAXTERMS asociados.
+                    </h4>
+                    </p>
+                </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>9. Expresar la función booleana como un producto MAXTERM:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText9'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>F(a,b,c) = a + b’ * c</i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText9">
+                    <p>
+                    <h4>
+                        Primero, se obtiene la tabla de verdad de la función y luego se toman los MAXTERM desde dicha tabla de verdad. Enseguida, se evalúa la función para todas las combinaciones y se toman los MAXTERM de la tabla para los cuales la función lógica vale 0.
+                        <br><br>
+                        Entonces la respuesta es:
+                        <br>
+                        F(a,b,c) = (a + b + c)(a + b’ + c)(a + b’ + c’)
+                        <br><br>
+                        Que puede expresarse como:
+                        <br>
+                        F(a,b,c) = m (0,2,3)
+                    </h4>
+                    </p>
+                </div>
+
+                    <p>━━━━━━━━━━━━━━━━━━━ ◦ ❖ ◦ ━━━━━━━━━━━━━━━━━</p>
+                    <li><h3>10. Demuestra la siguiente equivalencia booleana:</h3></li>
+                    <br><a href="#" onclick="toggleVisibility('hiddenText10'); return false;" style="display: block; font-weight: bold; color: #000000; background-color: #f6aa1c; border: 1px solid #ffffff; border-radius: 10px; text-align: center; width: auto; height: 70px ">
+                    <strong><br> ❖ &emsp;<i>XYZ + XZ + Z = Z</i></strong>
+                </a>
+                <div style="display: none; margin-top: 10px;" id="hiddenText10">
+                    <p>
+                    <h4>
+                        XYZ + XZ + Z = XYZ + Z (X+1)
+                        <br>
+                        = XYZ + Z (1)
+                        <br>
+                        = XYZ + Z
+                        <br>
+                        = Z (XY + 1)
+                        <br>
+                        = Z (1)
+                        <br>
+                        = Z
+                    </h4>
+                    </p>
+                </div>
+                <br><br><br><br>
+			</div>
 		</section>
 	</section>
+</body>
 </html>
